@@ -1,0 +1,41 @@
+---
+import { Icon } from "astro-icon/components";
+import ButtonToTop from "./ButtonToTop.astro";
+---
+
+<section
+  id="contact"
+  class="relative flex flex-col items-center gap-4 mt-6 pb-4 sm:items-start"
+>
+  <h2 class="font-bold text-2xl self-start sm:self-auto">Contato</h2>
+  <ul class="place-self-start flex flex-col gap-3 tracking-wide">
+    <li>
+      <a
+        href="https://linkedin.com/in/jottavedev"
+        class="flex gap-1 items-center hover:opacity-70 transition-opacity duration-300"
+      >
+        <Icon name="linkedin" class="size-6" />
+        Linkedin
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/jottavedev"
+        class="flex gap-1 items-center hover:opacity-70 transition-opacity duration-300"
+      >
+        <Icon name="github" class="size-6" />
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a
+        href="mailto:jviktor204@gmail.com"
+        class="flex gap-1 items-center hover:opacity-70 transition-opacity duration-300"
+      >
+        <Icon name="email" class="size-6" />
+        Email</a
+      >
+    </li>
+  </ul>
+  <ButtonToTop />
+</section>

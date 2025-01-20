@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon/components";
+
+const skills = [
+  { label: "TypeScript", icon: "typescript" },
+  { label: "React", icon: "react" },
+  { label: "Angular", icon: "angular" },
+  { label: "Next.js", icon: "nextjs" },
+  { label: "Express", icon: "express" },
+  { label: "Postgres", icon: "postgresql" },
+  { label: "Docker", icon: "docker" },
+  { label: "JavaScript", icon: "javascript" },
+  { label: "Tailwind", icon: "tailwindcss" },
+  { label: "Git", icon: "git" },
+  { label: "Prisma", icon: "prisma" },
+];
+---
+
+<section
+  id="skills"
+  class="flex flex-col items-center gap-4 mt-6 sm:items-start"
+>
+  <h2 class="font-bold text-2xl self-start sm:self-auto">Habilidades</h2>
+  <ul class="w-full flex flex-wrap gap-6 flex-grow mt-2">
+    {
+      skills.map((skill) => (
+        <li class="text-sm flex-1 basis-20 flex flex-col items-center gap-3 font-semibold rounded-md sm:py-2 sm:px-4">
+          <Icon name={skill.icon} class="animate-pulse" />
+          {skill.label}
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  svg,
+  img {
+    @apply inline
+      w-[36px]
+      h-[36px]
+      sm:w-[48px]
+      sm:h-[48px];
+  }
+</style>

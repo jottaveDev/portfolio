@@ -1,0 +1,23 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="flex flex-col min-h-screen antialiased dark:text-zinc-100 dark:bg-zinc-900"
+  >
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<button
+  id="buttonToTop"
+  class="block self-end absolute p-2 -bottom-5 right-5 top-32 text-2xl rounded-full animate-bounce cursor-pointer"
+>
+  👆
+</button>
+
+<script>
+  const buttonToTop = document.querySelector("#buttonToTop");
+  buttonToTop?.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
+</script>

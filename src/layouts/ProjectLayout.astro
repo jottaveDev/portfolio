@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+const { title, description, image, stacks, alt } = frontmatter;
+---
+
+<Layout title={title}>
+  <section
+    class="max-w-screen-md mx-auto flex flex-col items-center gap-4 mt-6 sm:items-start px-8 lg:px-0"
+  >
+    <a
+      href="/#projects"
+      class="self-start text-sm text-zinc-400 hover:text-opacity-90 transition-colors duration-300"
+      >{"<"} Voltar</a
+    >
+    <div class="flex flex-col gap-6">
+      <Image
+        src={image}
+        alt={alt}
+        inferSize={true}
+        width={800}
+        height={800}
+        class="max-h-72 rounded-md object-cover"
+      />
+      <p>{description}</p>
+      <div class="self-start flex flex-col items-start gap-6">
+        <div class="flex items-center gap-2">
+          <span class="py-0.5 px-2.5 bg-zinc-300 dark:bg-zinc-700 rounded-md"
+            >Stacks</span
+          >
+          <p>{stacks}</p>
+        </div>
+        <a
+          href="https://golembrar.com"
+          class="flex gap-1 items-center border border-cyan-400 rounded-md px-4 py-1.5 hover:opacity-70 transition-opacity duration-300"
+        >
+          Acesse aqui
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

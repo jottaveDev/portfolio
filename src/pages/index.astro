@@ -1,0 +1,18 @@
+---
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
+import Profile from "../components/Profile.astro";
+import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="jvdev | Portfólio">
+  <main class="grid gap-4 max-w-screen-md mx-auto animate-fade px-8 lg:px-0">
+    <Profile />
+    <About />
+    <Skills />
+    <Projects />
+    <Contact />
+  </main>
+</Layout>

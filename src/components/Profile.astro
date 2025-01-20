@@ -1,0 +1,35 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="flex flex-col items-center gap-4 mt-6 sm:items-start">
+  <div class="w-full">
+    <div
+      class="flex flex-col gap-4 items-center w-full sm:flex-row sm:justify-between"
+    >
+      <div class="flex flex-col items-center gap-4 sm:items-start">
+        <div class="flex flex-col gap-2">
+          <h2 class="font-bold text-4xl text-center sm:text-start">
+            João Victor
+          </h2>
+          <h1 class="text-xl">Desenvolvedor Web</h1>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1F_oU3ibShHJZGq4FoNglRwodzlI-279_/view?usp=drive_link"
+          target="_blank"
+          class="flex items-center gap-2 font-semibold text-sm py-2 px-4 rounded-md border hover:bg-zinc-200 dark:hover:bg-zinc-700 dark:border-zinc-600 transition-colors duration-300"
+          >Download CV
+          <Icon name="download" class="animate-bounce" />
+        </a>
+      </div>
+
+      <picture class="mt-2">
+        <img
+          src="/avatar.png"
+          alt=""
+          class="rounded-full size-48 object-cover"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
