@@ -4,12 +4,12 @@ Seja bem-vindo ao meu portfólio! Este site foi desenvolvido com o objetivo de m
 
 ### Tecnologias utilizadas
 
-- Astro.js: framework para construção de sites rápidos e otimizado para SEO.
-- TailwindCSS: framework CSS para desenvolvimento de interfaces responsivas e customizáveis.
+* Astro.js: framework para construção de sites rápidos e otimizado para SEO.
+* TailwindCSS: framework CSS para desenvolvimento de interfaces responsivas e customizáveis.
 
 ### Contato
 
 Caso queira entrar em contato, você pode me encontrar nas seguintes redes sociais:
 
-- [LinkedIn]([URL](https://linkedin.com/in/jottavedev))
-- [GitHub]([URL](https://github.com/jottavedev))
+* [LinkedIn](https://linkedin.com/in/jottavedev)
+* [GitHub](https://github.com/jottavedev)
